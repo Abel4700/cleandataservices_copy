@@ -103595,3 +103595,44 @@ html {
             animation: bounce 1s infinite;
   }
 }
+
+/* General Styles */
+body {
+  font-family: var(--font-secondary);
+  color: #333;
+}
+
+/* Header */
+.header {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+/* Hero Section */
+.hero {
+  background-color: var(--tertiary-color-1);
+  color: var(--primary-color);
+}
+.hero .title {
+  font-family: var(--font-primary);
+  font-size: 36px;
+}
+
+/* Services Section */
+.services .service {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+.services .service h3 {
+  color: var(--secondary-color);
+}
+
+/* Testimonials Section */
+.testimonials .testimonial {
+  border: 1px solid var(--tertiary-color-2);
+  padding: 20px;
+}
+.testimonials .testimonial .author {
+  color: var(--tertiary-color-3);
+}
