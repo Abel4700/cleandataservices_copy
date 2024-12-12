@@ -88,62 +88,86 @@
     </div>
 </section>
 
-    <!-- SERVICES -->
-    <section id="services" class="bg-gray-100 py-16">
-        <div class="container mx-auto px-4">
-            <h2 class="text-4xl font-bold text-[#002A5C] text-center mb-10">Our Services</h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white shadow p-6 rounded">
-                    <h3 class="text-lg font-bold text-[#008BB0]">Data Cleaning</h3>
-                    <p class="mt-2 text-gray-700">
-                        Ensure your data is free from errors and inconsistencies, ready for analysis and reporting.
-                    </p>
+   <section id="services" class="bg-gray-100 py-16">
+    <div class="container mx-auto px-4 md:px-8 lg:px-16 xl:px-32">
+        <h2 class="text-3xl md:text-4xl font-semibold text-[#002A5C] text-center mb-10">Our Services</h2>
+        <div class="space-y-6">
+            <!-- Service 1 -->
+            <div class="bg-white shadow p-6 rounded-lg">
+                <h3 class="text-lg font-bold text-[#008BB0] cursor-pointer" onclick="toggleDetails('service1')">
+                    Data Quality Solutions
+                </h3>
+                <p class="mt-2 text-gray-700">Ensure your organization's data is accurate, consistent, and ready for action.</p>
+                <div id="service1" class="hidden mt-4">
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li><strong>Data Cleaning</strong>: Remove errors, duplicates, and inconsistencies for trustworthy datasets.</li>
+                        <li><strong>Data Validation</strong>: Verify data accuracy and suitability for its intended purpose, including public-facing data reviews.</li>
+                        <li><strong>Data Quality Management</strong>: Maintain data integrity over time through robust frameworks and regular audits.</li>
+                    </ul>
                 </div>
-                <div class="bg-white shadow p-6 rounded">
-                    <h3 class="text-lg font-bold text-[#008BB0]">Data Validation</h3>
-                    <p class="mt-2 text-gray-700">
-                        Verify the accuracy and quality of your data for reliability and effectiveness.
-                    </p>
+                <button class="text-sm text-[#FF6400] mt-4" onclick="toggleDetails('service1')">Read More</button>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="bg-white shadow p-6 rounded-lg">
+                <h3 class="text-lg font-bold text-[#008BB0] cursor-pointer" onclick="toggleDetails('service2')">
+                    Data System Management
+                </h3>
+                <p class="mt-2 text-gray-700">Optimize the way your organization handles, stores, and migrates data for seamless operations.</p>
+                <div id="service2" class="hidden mt-4">
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li><strong>Database Management</strong>: Design, optimize, and maintain secure and efficient databases tailored to your needs.</li>
+                        <li><strong>Data Migration</strong>: Safely transfer data between systems while maintaining integrity and minimizing downtime.</li>
+                        <li><strong>Digitization Services</strong>: Convert physical records into organized, digital formats for accessibility and security.</li>
+                    </ul>
                 </div>
-                <div class="bg-white shadow p-6 rounded">
-                    <h3 class="text-lg font-bold text-[#008BB0]">Data Migration</h3>
-                    <p class="mt-2 text-gray-700">
-                        Transfer data seamlessly between systems, ensuring integrity and minimal downtime.
-                    </p>
+                <button class="text-sm text-[#FF6400] mt-4" onclick="toggleDetails('service2')">Read More</button>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="bg-white shadow p-6 rounded-lg">
+                <h3 class="text-lg font-bold text-[#008BB0] cursor-pointer" onclick="toggleDetails('service3')">
+                    Strategic Data Consulting
+                </h3>
+                <p class="mt-2 text-gray-700">Leverage expert guidance to address your unique data management challenges and unlock your organization's potential.</p>
+                <div id="service3" class="hidden mt-4">
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li><strong>Consultancy Services</strong>: Tailored advice on data governance, strategy, and implementation.</li>
+                        <li><strong>Skills Training</strong>: Equip your teams with the knowledge to manage and utilize data effectively.</li>
+                    </ul>
                 </div>
-                <div class="bg-white shadow p-6 rounded">
-                    <h3 class="text-lg font-bold text-[#008BB0]">Data Collection</h3>
-                    <p class="mt-2 text-gray-700">
-                        Gather data efficiently and systematically to meet your business objectives.
-                    </p>
+                <button class="text-sm text-[#FF6400] mt-4" onclick="toggleDetails('service3')">Read More</button>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="bg-white shadow p-6 rounded-lg">
+                <h3 class="text-lg font-bold text-[#008BB0] cursor-pointer" onclick="toggleDetails('service4')">
+                    Data Insights and Visualization
+                </h3>
+                <p class="mt-2 text-gray-700">Turn raw data into actionable insights and compelling visual stories to drive better decision-making.</p>
+                <div id="service4" class="hidden mt-4">
+                    <ul class="list-disc list-inside text-gray-700">
+                        <li><strong>Data Analysis</strong>: Extract meaningful insights from complex datasets to support strategic planning.</li>
+                        <li><strong>Data Visualization</strong>: Create intuitive dashboards and reports that make data accessible and actionable.</li>
+                    </ul>
                 </div>
-                <div class="bg-white shadow p-6 rounded">
-                    <h3 class="text-lg font-bold text-[#008BB0]">Data Quality Management</h3>
-                    <p class="mt-2 text-gray-700">
-                        Ensure data accuracy, consistency, and reliability to drive smarter decisions.
-                    </p>
-                </div>
-                <div class="bg-white shadow p-6 rounded">
-                    <h3 class="text-lg font-bold text-[#008BB0]">Database Management</h3>
-                    <p class="mt-2 text-gray-700">
-                        Optimize database storage, retrieval, and security for operational efficiency.
-                    </p>
-                </div>
-                <div class="bg-white shadow p-6 rounded">
-                    <h3 class="text-lg font-bold text-[#008BB0]">Consultancy Services</h3>
-                    <p class="mt-2 text-gray-700">
-                        Receive expert guidance tailored to your specific data management needs and challenges.
-                    </p>
-                </div>
-                <div class="bg-white shadow p-6 rounded">
-                    <h3 class="text-lg font-bold text-[#008BB0]">Skills Training</h3>
-                    <p class="mt-2 text-gray-700">
-                        Empower your teams with the skills and knowledge needed to effectively manage and utilize data.
-                    </p>
-                </div>
+                <button class="text-sm text-[#FF6400] mt-4" onclick="toggleDetails('service4')">Read More</button>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<script>
+    function toggleDetails(id) {
+        const section = document.getElementById(id);
+        if (section.classList.contains('hidden')) {
+            section.classList.remove('hidden');
+        } else {
+            section.classList.add('hidden');
+        }
+    }
+</script>
+
 
     <!-- CONTACT -->
     <section id="contact" class="bg-[#002A5C] py-16 text-gray-800">
