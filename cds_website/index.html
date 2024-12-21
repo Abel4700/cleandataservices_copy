@@ -1,5 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+    <body class="font-body bg-gray-100">
+
+        <!-- Top Bar for Address and Social Media Links -->
+        <div class="bg-[#1F548F] text-[#1F548F] py-2">
+            <div class="container mx-auto flex justify-between items-center px-16">
+                <!-- Address -->
+                <p class="text-sm font-medium"></p>
+                
+                <!-- Social Media Links -->
+                <div class="flex space-x-4">
+                    <a href="https://facebook.com" target="_blank" class="hover:text-gray-300 transition duration-300">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.675 0H1.325A1.326 1.326 0 000 1.325v21.35A1.326 1.326 0 001.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.66-4.788 1.325 0 2.465.099 2.797.143v3.243l-1.918.001c-1.504 0-1.796.716-1.796 1.764v2.31h3.59l-.467 3.622h-3.123V24h6.126A1.326 1.326 0 0024 22.675V1.325A1.326 1.326 0 0022.675 0z" />
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="hover:text-gray-300 transition duration-300">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23.954 4.569c-.885.394-1.83.658-2.825.775a4.953 4.953 0 002.163-2.723 9.864 9.864 0 01-3.127 1.195 4.922 4.922 0 00-8.384 4.482C7.691 8.094 4.066 6.13 1.64 3.161a4.822 4.822 0 00-.666 2.475 4.922 4.922 0 002.19 4.107 4.903 4.903 0 01-2.228-.616v.062a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.224.084 4.936 4.936 0 004.604 3.419A9.867 9.867 0 010 19.54a13.945 13.945 0 007.548 2.209c9.142 0 14.307-7.721 14.307-14.426 0-.219-.005-.438-.014-.655A10.254 10.254 0 0024 4.59z" />
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="hover:text-gray-300 transition duration-300">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.452 20.452H16.908v-5.568c0-1.328-.025-3.044-1.855-3.044-1.855 0-2.14 1.446-2.14 2.943v5.669h-3.546V9.333h3.408v1.527h.049c.474-.9 1.63-1.855 3.353-1.855 3.585 0 4.248 2.358 4.248 5.427v6.019zM5.337 7.433c-1.144 0-2.067-.926-2.067-2.063 0-1.138.923-2.067 2.067-2.067 1.139 0 2.065.929 2.065 2.067 0 1.137-.926 2.063-2.065 2.063zM6.796 20.452H3.878V9.333h2.918v11.119zM22.225 0H1.771C.79 0 0 .79 0 1.771v20.457C0 23.21.79 24 1.771 24h20.457c.98 0 1.771-.79 1.771-1.771V1.771C24 .79 23.21 0 22.225 0z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
 
 <head>
     <meta charset="UTF-8">
@@ -25,6 +53,7 @@
             <a href="#hero" class="mr-5 hover:text-[#008BB0]">Home</a>
             <a href="#about" class="mr-5 hover:text-[#008BB0]">About</a>
             <a href="#services" class="mr-5 hover:text-[#008BB0]">Services</a>
+            <a href="#research" class="mr-5 hover:text-[#008BB0]">Research</a>
             <a href="#contact" class="mr-5 hover:text-[#008BB0]">Contact</a>
         </nav>
     </div>
@@ -88,67 +117,68 @@
     </div>
 </section>
 
-   <section id="services" class="bg-gray-100 py-16">
-    <div class="container mx-auto px-4 md:px-8 lg:px-16 xl:px-32">
+<section id="services" class="bg-gray-100 py-16">
+    <div class="container mx-auto px-4 md:px-8 lg:px-32 xl:px-32">
         <h2 class="text-3xl md:text-4xl font-semibold text-[#002A5C] text-center mb-10">Our Services</h2>
-        <div class="space-y-6">
+        <div class="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-8">
             <!-- Service 1 -->
-            <div class="bg-white shadow p-6 rounded-lg">
+            <div class="bg-white shadow-lg p-6 rounded-lg hover:shadow-2xl transition duration-300">
                 <h3 class="text-lg font-bold text-[#008BB0] cursor-pointer" onclick="toggleDetails('service1')">
                     Data Quality Solutions
                 </h3>
                 <p class="mt-2 text-gray-700">Ensure your organization's data is accurate, consistent, and ready for action.</p>
                 <div id="service1" class="hidden mt-4">
                     <ul class="list-disc list-inside text-gray-700">
-                        <li><strong>Data Cleaning</strong>: Remove errors, duplicates, and inconsistencies for trustworthy datasets.</li>
-                        <li><strong>Data Validation</strong>: Verify data accuracy and suitability for its intended purpose, including public-facing data reviews.</li>
-                        <li><strong>Data Quality Management</strong>: Maintain data integrity over time through robust frameworks and regular audits.</li>
+                        <li><strong>Data Cleaning</strong>: Identify data errors and correct them to comply with standards.</li>
+                        <li><strong>Data Enhancement</strong>: Add attributes to datasets to increase quality & usability.</li>
+                        <li><strong>Data Parsing & Formatting</strong>: Analyze data following predefined rules to verify validity.</li>
+                        <li><strong>Data Quality Management</strong>: Maintain data integrity over time through robust frameworks.</li>
                     </ul>
                 </div>
                 <button class="text-sm text-[#FF6400] mt-4" onclick="toggleDetails('service1')">Read More</button>
             </div>
 
             <!-- Service 2 -->
-            <div class="bg-white shadow p-6 rounded-lg">
+            <div class="bg-white shadow-lg p-6 rounded-lg hover:shadow-2xl transition duration-300">
                 <h3 class="text-lg font-bold text-[#008BB0] cursor-pointer" onclick="toggleDetails('service2')">
                     Data System Management
                 </h3>
                 <p class="mt-2 text-gray-700">Optimize the way your organization handles, stores, and migrates data for seamless operations.</p>
                 <div id="service2" class="hidden mt-4">
                     <ul class="list-disc list-inside text-gray-700">
-                        <li><strong>Database Management</strong>: Design, optimize, and maintain secure and efficient databases tailored to your needs.</li>
-                        <li><strong>Data Migration</strong>: Safely transfer data between systems while maintaining integrity and minimizing downtime.</li>
-                        <li><strong>Digitization Services</strong>: Convert physical records into organized, digital formats for accessibility and security.</li>
+                        <li><strong>Database Management</strong>: Design, optimize, and maintain secure and efficient databases.</li>
+                        <li><strong>Data Migration</strong>: Safely transfer data between systems while maintaining integrity.</li>
+                        <li><strong>Digitization Services</strong>: Convert physical records into organized, digital formats.</li>
                     </ul>
                 </div>
                 <button class="text-sm text-[#FF6400] mt-4" onclick="toggleDetails('service2')">Read More</button>
             </div>
 
             <!-- Service 3 -->
-            <div class="bg-white shadow p-6 rounded-lg">
+            <div class="bg-white shadow-lg p-6 rounded-lg hover:shadow-2xl transition duration-300">
                 <h3 class="text-lg font-bold text-[#008BB0] cursor-pointer" onclick="toggleDetails('service3')">
                     Strategic Data Consulting
                 </h3>
-                <p class="mt-2 text-gray-700">Leverage expert guidance to address your unique data management challenges and unlock your organization's potential.</p>
+                <p class="mt-2 text-gray-700">Leverage expert guidance to address your unique data management challenges.</p>
                 <div id="service3" class="hidden mt-4">
                     <ul class="list-disc list-inside text-gray-700">
                         <li><strong>Consultancy Services</strong>: Tailored advice on data governance, strategy, and implementation.</li>
-                        <li><strong>Skills Training</strong>: Equip your teams with the knowledge to manage and utilize data effectively.</li>
+                        <li><strong>Skills Training</strong>: Equip teams with the knowledge to manage and utilize data effectively.</li>
                     </ul>
                 </div>
                 <button class="text-sm text-[#FF6400] mt-4" onclick="toggleDetails('service3')">Read More</button>
             </div>
 
             <!-- Service 4 -->
-            <div class="bg-white shadow p-6 rounded-lg">
+            <div class="bg-white shadow-lg p-6 rounded-lg hover:shadow-2xl transition duration-300">
                 <h3 class="text-lg font-bold text-[#008BB0] cursor-pointer" onclick="toggleDetails('service4')">
                     Data Insights and Visualization
                 </h3>
-                <p class="mt-2 text-gray-700">Turn raw data into actionable insights and compelling visual stories to drive better decision-making.</p>
+                <p class="mt-2 text-gray-700">Turn raw data into actionable insights and visual stories for decision-making.</p>
                 <div id="service4" class="hidden mt-4">
                     <ul class="list-disc list-inside text-gray-700">
-                        <li><strong>Data Analysis</strong>: Extract meaningful insights from complex datasets to support strategic planning.</li>
-                        <li><strong>Data Visualization</strong>: Create intuitive dashboards and reports that make data accessible and actionable.</li>
+                        <li><strong>Data Analysis</strong>: Extract meaningful insights from complex datasets for planning.</li>
+                        <li><strong>Data Visualization</strong>: Create intuitive dashboards and reports for accessible data.</li>
                     </ul>
                 </div>
                 <button class="text-sm text-[#FF6400] mt-4" onclick="toggleDetails('service4')">Read More</button>
@@ -168,6 +198,82 @@
     }
 </script>
 
+<script>
+    function toggleDetails(id) {
+        const section = document.getElementById(id);
+        if (section.classList.contains('hidden')) {
+            section.classList.remove('hidden');
+        } else {
+            section.classList.add('hidden');
+        }
+    }
+</script>
+
+<section id="research" class="bg-gray-50 py-16">
+    <div class="container mx-auto px-8 lg:px-16 xl:px-32">
+        <h2 class="text-4xl md:text-5xl font-bold text-[#002A5C] text-center mb-10">Our Research</h2>
+        <p class="text-lg text-gray-700 text-center mb-12">
+            At Clean Data Services, we stay at the forefront of data innovation by conducting research that drives smarter solutions.
+            Explore our studies, case analyses, and cutting-edge methodologies.
+        </p>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Research Item 1 -->
+            <div class="bg-white shadow rounded-lg p-6">
+                <h3 class="text-xl font-semibold text-[#008BB0] mb-4">Case Study: Data Transformation</h3>
+                <p class="text-gray-700">
+                    A deep dive into how we helped a multinational company enhance their decision-making with data optimization.
+                </p>
+                <a href="#" class="text-[#FF6400] mt-4 inline-block hover:text-[#008BB0] transition">Read More</a>
+            </div>
+            <!-- Research Item 2 -->
+            <div class="bg-white shadow rounded-lg p-6">
+                <h3 class="text-xl font-semibold text-[#008BB0] mb-4">Data Quality Management Framework</h3>
+                <p class="text-gray-700">
+                    Learn about our innovative framework for ensuring data consistency, accuracy, and usability.
+                </p>
+                <a href="#" class="text-[#FF6400] mt-4 inline-block hover:text-[#008BB0] transition">Read More</a>
+            </div>
+            <!-- Research Item 3 -->
+            <div class="bg-white shadow rounded-lg p-6">
+                <h3 class="text-xl font-semibold text-[#008BB0] mb-4">Harnessing AI for Data Insights</h3>
+                <p class="text-gray-700">
+                    Discover how artificial intelligence is transforming the way organizations analyze and visualize their data.
+                </p>
+                <a href="#" class="text-[#FF6400] mt-4 inline-block hover:text-[#008BB0] transition">Read More</a>
+            </div>
+            <!-- Research Item 4 -->
+            <div class="bg-white shadow rounded-lg p-6">
+                <h3 class="text-xl font-semibold text-[#008BB0] mb-4">Scaling Data Solutions</h3>
+                <p class="text-gray-700">
+                    Insights into our approach to scaling data infrastructures for growing businesses.
+                </p>
+                <a href="#" class="text-[#FF6400] mt-4 inline-block hover:text-[#008BB0] transition">Read More</a>
+            </div>
+            <!-- Research Item 5 -->
+            <div class="bg-white shadow rounded-lg p-6">
+                <h3 class="text-xl font-semibold text-[#008BB0] mb-4">Ethical Data Practices</h3>
+                <p class="text-gray-700">
+                    Explore our commitment to ethical data usage and best practices in the data industry.
+                </p>
+                <a href="#" class="text-[#FF6400] mt-4 inline-block hover:text-[#008BB0] transition">Read More</a>
+            </div>
+            <!-- Research Item 6 -->
+            <div class="bg-white shadow rounded-lg p-6">
+                <h3 class="text-xl font-semibold text-[#008BB0] mb-4">Data Visualization Techniques</h3>
+                <p class="text-gray-700">
+                    An overview of innovative techniques for presenting complex data in clear and actionable formats.
+                </p>
+                <a href="#" class="text-[#FF6400] mt-4 inline-block hover:text-[#008BB0] transition">Read More</a>
+            </div>
+        </div>
+        <!-- CTA Section -->
+        <div class="text-center mt-12">
+            <a href="#contact" class="bg-[#008BB0] hover:bg-[#FF6400] text-white py-3 px-8 rounded-lg text-lg transition">
+                Learn More About Our Research
+            </a>
+        </div>
+    </div>
+</section>
 
     <!-- CONTACT -->
     <section id="contact" class="bg-[#002A5C] py-16 text-gray-800">
