@@ -103636,3 +103636,119 @@ body {
 .testimonials .testimonial .author {
   color: var(--tertiary-color-3);
 }
+/* Global Typography */
+body {
+  font-family: 'Century Gothic', Arial, sans-serif; /* Body text */
+  color: #002A5C; /* UT Navy for default text color */
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Logik', 'Century Gothic', sans-serif; /* Headings use Logik */
+  font-weight: bold;
+}
+
+/* Links and Interactive Elements */
+a {
+  color: #00B9E1; /* UT Blue for links */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #FF6400; /* Persimmon for hover effects */
+}
+
+/* Buttons */
+button, .button {
+  background-color: #00B9E1; /* UT Blue */
+  color: white;
+  font-family: 'Century Gothic', Arial, sans-serif;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover, .button:hover {
+  background-color: #FF6400; /* Persimmon for hover */
+}
+
+/* Headings */
+h1 {
+  color: #002A5C; /* UT Navy */
+  font-size: 3rem; /* Adjust as needed */
+}
+
+h2 {
+  color: #00B9E1; /* UT Blue */
+  font-size: 2.5rem;
+}
+
+h3 {
+  color: #FF6400; /* Persimmon */
+  font-size: 2rem;
+}
+
+}
+footer {
+  background-color: #002A5C; /* UT Navy */
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer p {
+  font-family: 'Century Gothic', Arial, sans-serif;
+  font-size: 1rem;
+  color: white;
+}
+footer {
+    background-color: #002A5C; /* UT Navy */
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    font-family: 'Century Gothic', Arial, sans-serif;
+    font-size: 1rem;
+    color: white;
+}
+#services {
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 3rem 1rem;
+}
+
+#services h2 {
+    font-family: 'Logik', 'Century Gothic', sans-serif;
+    font-size: 2.5rem;
+    color: #002A5C; /* UT Navy */
+    text-align: center;
+}
+
+#services .service-item {
+    background-color: white;
+    border: 1px solid #E0E0E0;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+#services .service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+#services h3 {
+    font-family: 'Logik', 'Century Gothic', sans-serif;
+    color: #00B9E1; /* UT Blue */
+    font-size: 1.8rem;
+}
+
+#services p {
+    color: #4A4A4A; /* Gray for text */
+    font-size: 1rem;
+}
